@@ -112,5 +112,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'django.contrib.admindocs',
+    'cslansing.apps.attendance',
+    'cslansing.apps.blog',
     'cslansing.apps.pluggable',
 )
