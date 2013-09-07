@@ -25,20 +25,65 @@
     </script>
 
     <!-- External Styles -->
-    <link href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" rel="stylesheet" >
-    <link href="{{ STATIC_URL }}cslansing.css" rel="stylesheet" />
+    <link href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}cslansing.css" rel="stylesheet">
 
     <!-- Favicon -->
-    <link href="{{ STATIC_URL }}cslfavicon.ico" rel="shortcut icon" />
+    <link href="{{ STATIC_URL }}cslfavicon.ico" rel="shortcut icon">
 
   </head>
 
   <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Chris Lansing</h1>
+        <p>
+          <a href="">
+            <i class="icon-facebook"></i> Facebook
+          </a>
+          |
+          <a href="">
+            <i class="icon-twitter"></i> Twitter
+          </a>
+          |
+          <a href="">
+            <i class="icon-google-plus"></i> Google+
+          </a>
+          |
+          <a href="">
+            <i class="icon-github"></i> Github
+          </a>
+          |
+          <a href="">
+            <i class="icon-linkedin"></i> LinkedIn
+          </a>
+        </p>
+      </div><!-- .jumbotron -->
 
-
+      <div class="row section-header" id="project-one">
+        <h3>Project 1 <span class="glyphicon glyphicon-chevron-down"></span></h3>
+      </div>
+      <div class="row section-content" id="project-one-content">
+        <p>Project 1 Content</p>
+      </div>
+      <div class="row section-header" id="project-two">
+        <h3>Project 2 <span class="glyphicon glyphicon-chevron-down"></span></h3>
+      </div>
+      <div class="row section-content" id="project-two-content">
+        <p>Project 2 Content</p>
+      </div>
+      <div class="row section-header" id="project-three">
+        <h3>Project 3 <span class="glyphicon glyphicon-chevron-down"></span></h3>
+      </div>
+      <div class="row section-content" id="project-three-content">
+        <p>Project 3 Content</p>
+      </div>
+    </div><!-- .container -->
      <!-- Javascript at the bottom for faster page loads -->
     <script src="{{ STATIC_URL }}jquery/jquery-1.10.2.min.js"></script>
     <script src="{{ STATIC_URL }}bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{ STATIC_URL }}cslansing.js"></script>
     {% block scripts %}{% endblock scripts %}
   </body>
 </html>

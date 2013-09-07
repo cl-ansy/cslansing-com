@@ -1,0 +1,16 @@
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.section-header {
+    padding: 1em;
+    text-align: center;
+    background-color: #CCCCCC;
+    border-bottom: 1px solid #DDDDDD;
+    cursor: pointer;
+}
+
+.section-content {
+    display: none;
+}
