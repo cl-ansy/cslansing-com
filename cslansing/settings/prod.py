@@ -101,6 +101,8 @@ ROOT_URLCONF = 'cslansing.urls'
 WSGI_APPLICATION = 'cslansing.wsgi.application'
 
 TEMPLATE_DIRS = (
+    '/home/cslansing/cslansing-com/cslansing/apps/attendance/templates/',
+    '/home/cslansing/cslansing-com/cslansing/apps/blog/templates/',
     '/home/cslansing/cslansing-com/cslansing/apps/pluggable/templates/'
 )
 

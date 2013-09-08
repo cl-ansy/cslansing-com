@@ -27,6 +27,8 @@
     <!-- External Styles -->
     <link href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
     <link href="{{ STATIC_URL }}cslansing.css" rel="stylesheet">
 
     <!-- Favicon -->
@@ -35,6 +37,21 @@
   </head>
 
   <body>
+
+  <!-- Side Nav Button -->
+    <div class="btn-group sidenav">
+      <button type="button" id="sidenav-button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        <i class="icon-double-angle-down"></i>
+      </button>
+      <ul class="dropdown-menu pull-right" role="menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div>
+
     <div class="container">
       <div class="jumbotron">
         <h1>Chris Lansing</h1>
@@ -61,24 +78,38 @@
         </p>
       </div><!-- .jumbotron -->
 
-      <div class="row section-header" id="project-one">
-        <h3>Project 1 <span class="glyphicon glyphicon-chevron-down"></span></h3>
+      <!-- About -->
+      <div id="about" class="row section-header">
+        <h3>About Me <i class="icon-chevron-down"></i></h3>
       </div>
-      <div class="row section-content" id="project-one-content">
-        <p>Project 1 Content</p>
+      <div id="about-content" class ="row section-content">
+        About Me
       </div>
-      <div class="row section-header" id="project-two">
-        <h3>Project 2 <span class="glyphicon glyphicon-chevron-down"></span></h3>
+
+      <!-- Blog -->
+      <div id="blog" class="row section-header">
+        <h3>Blog <i class="icon-chevron-down"></i></h3>
       </div>
-      <div class="row section-content" id="project-two-content">
-        <p>Project 2 Content</p>
+      <div id="blog-content" class="row section-content">
+          bloglboglbgoblgboglbogblgoblg
       </div>
-      <div class="row section-header" id="project-three">
-        <h3>Project 3 <span class="glyphicon glyphicon-chevron-down"></span></h3>
+
+      <!-- Projects -->
+      <div id="projects" class="row section-header">
+        <h3>Projects <i class="icon-chevron-down"></i></h3>
       </div>
-      <div class="row section-content" id="project-three-content">
-        <p>Project 3 Content</p>
+      <div id="projects-content" class="row section-content">
+        {% include 'attendance.html' %}
       </div>
+
+      <!-- Resume -->
+      <div id="resume" class="row section-header">
+        <h3>Resume <i class="icon-chevron-down"></i></h3>
+      </div>
+      <div id="resume-content" class ="row section-content">
+        Resume Content
+      </div>
+
     </div><!-- .container -->
      <!-- Javascript at the bottom for faster page loads -->
     <script src="{{ STATIC_URL }}jquery/jquery-1.10.2.min.js"></script>
