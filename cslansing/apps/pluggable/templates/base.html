@@ -44,11 +44,10 @@
         <i class="icon-double-angle-down"></i>
       </button>
       <ul class="dropdown-menu pull-right" role="menu">
-        <li><a href="#">Action</a></li>
-        <li><a href="#">Another action</a></li>
-        <li><a href="#">Something else here</a></li>
-        <li class="divider"></li>
-        <li><a href="#">Separated link</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
       </ul>
     </div>
 
@@ -83,7 +82,8 @@
         <h3>About Me <i class="icon-chevron-down"></i></h3>
       </div>
       <div id="about-content" class ="row section-content">
-        About Me
+        {% block about %}
+        {% endblock about %}
       </div>
 
       <!-- Blog -->
@@ -91,7 +91,8 @@
         <h3>Blog <i class="icon-chevron-down"></i></h3>
       </div>
       <div id="blog-content" class="row section-content">
-          bloglboglbgoblgboglbogblgoblg
+          {% block blog %}
+          {% endblock blog %}
       </div>
 
       <!-- Projects -->
@@ -99,7 +100,8 @@
         <h3>Projects <i class="icon-chevron-down"></i></h3>
       </div>
       <div id="projects-content" class="row section-content">
-        {% include 'attendance.html' %}
+        {% block projects %}
+        {% endblock projects %}
       </div>
 
       <!-- Resume -->
@@ -107,7 +109,8 @@
         <h3>Resume <i class="icon-chevron-down"></i></h3>
       </div>
       <div id="resume-content" class ="row section-content">
-        Resume Content
+        {% block resume %}
+        {% endblock resume %}
       </div>
 
     </div><!-- .container -->

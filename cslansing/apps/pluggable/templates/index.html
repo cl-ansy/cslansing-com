@@ -1,1 +1,41 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+
+{% block about %}
+<div class="col-md-4">
+  <h4>
+
+  </h4>
+</div>
+<div class="col-md-4">
+  <h4>
+    h3
+  </h4>
+</div>
+<div class="col-md-4">
+  <h4>
+    h4
+  </h4>
+</div>
+{% endblock about %}
+
+{% block blog %}
+{% include 'blog.html' %}
+{% endblock blog %}
+
+{% block projects %}
+{% include 'attendance.html' %}
+<div id="chem-project" class="panel panel-default">
+  <div class="panel-heading"><strong>Organic Chemistry Alkane Nomenclature Solver</strong></div>
+  <div class="panel-body">
+    <p>
+      Created Python desktop application to allow users to draw alkane molecules by placing individual carbon atoms in a GUI. The IUPAC nomenclature for the molecule is then derived by recursively iterating over the molecule to obtain necessary structural information such as the location of the longest straight carbon chain and the frequency, position, and length of all substituent groups.
+    </p>
+  </div>
+</div>
+{% endblock projects %}
+
+{% block resume %}
+<object data="{{ STATIC_URL }}Resume.pdf" type="application/pdf" height="1050px"  1width="100%">
+  alt : <a href="{{ STATIC_URL }}Resume.pdf">Resume.pdf</a>
+</object>
+{% endblock resume %}
