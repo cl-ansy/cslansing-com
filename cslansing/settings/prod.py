@@ -64,7 +64,7 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    '/home/cslansing/cslansing-com/cslansing/apps/pluggable/static/'
+    '/home/cslansing/cslansing-com/cslansing/apps/pluggable/static/',
 )
 
 # List of finder classes that know how to find static files in
