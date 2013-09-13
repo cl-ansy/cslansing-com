@@ -45,7 +45,7 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = '/home/cslansing/cslansing-com/cslansing/media/'
+MEDIA_ROOT = '/var/www/cslansing-com/cslansing/media/'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -56,7 +56,7 @@ MEDIA_URL = '/media/'
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = '/home/cslansing/cslansing-com-static/'
+STATIC_ROOT = '/var/www/cslansing-com-static/'
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
@@ -64,7 +64,7 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    '/home/cslansing/cslansing-com/cslansing/apps/pluggable/static/',
+    '/var/www/cslansing-com/cslansing/apps/pluggable/static/',
 )
 
 # List of finder classes that know how to find static files in
@@ -101,9 +101,9 @@ ROOT_URLCONF = 'cslansing.urls'
 WSGI_APPLICATION = 'cslansing.wsgi.application'
 
 TEMPLATE_DIRS = (
-    '/home/cslansing/cslansing-com/cslansing/apps/attendance/templates/',
-    '/home/cslansing/cslansing-com/cslansing/apps/blog/templates/',
-    '/home/cslansing/cslansing-com/cslansing/apps/pluggable/templates/'
+    '/var/www/cslansing-com/cslansing/apps/attendance/templates/',
+    '/var/www/cslansing-com/cslansing/apps/blog/templates/',
+    '/var/www/cslansing-com/cslansing/apps/pluggable/templates/'
 )
 
 INSTALLED_APPS = (
@@ -115,7 +115,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'django.contrib.admindocs',
-    'apps.attendance',
+    'cslansing.apps.attendance',
     'cslansing.apps.blog',
     'cslansing.apps.pluggable',
 )

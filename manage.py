@@ -2,7 +2,7 @@
 import os
 import sys
 
-sys.path.append('/home/cslansing/cslansing-com/cslansing')
+sys.path.append('/var/www/cslansing-com/cslansing')
 
 if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "cslansing.settings.prod")
