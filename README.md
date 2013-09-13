@@ -10,6 +10,6 @@ Deployment
 - [x] configure apache to point to /cslansing-com/cslansing/wsgi.py
 - [x] configure apache to serve static files from /cslansing-com-static/
 - [x] restart apache
-- [ ] create checkins
+- [x] create checkins
 - [ ] create blogs
 - [ ] create 404 template
