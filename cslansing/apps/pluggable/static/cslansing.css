@@ -54,3 +54,8 @@ h1, h2, h3, h4, h5, h6,
     display: none;
     padding-top: 0.5em;
 }
+
+.resume-pdf {
+    height: 1050px;
+    width: 100%;
+}

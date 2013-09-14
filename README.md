@@ -11,5 +11,12 @@ Deployment
 - [x] configure apache to serve static files from /cslansing-com-static/
 - [x] restart apache
 - [x] create checkins
-- [ ] create blogs
+- [x] create blogs
+
+
+TODO
+-------
 - [ ] create 404 template
+- [ ] fill about content
+- [ ] show about on page load
+- [ ] dont load pdf object on page load
