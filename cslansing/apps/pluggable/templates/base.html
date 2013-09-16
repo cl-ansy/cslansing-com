@@ -29,10 +29,9 @@
         <i class="icon-double-angle-down"></i>
       </button>
       <ul class="dropdown-menu pull-right" role="menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
+        <li><a href="#about-header">About</a></li>
+        <li><a href="#blog-header">Blog</a></li>
+        <li><a href="#projects-header">Projects</a></li>
       </ul>
     </div>
 
@@ -62,28 +61,28 @@
       </div><!-- .jumbotron -->
 
       <!-- About -->
-      <div id="about" class="row section-header">
+      <div id="about-header" class="row section-header">
         <h3>About <i class="icon-angle-down"></i></h3>
       </div>
-      <div id="about-content" class ="row section-content">
+      <div id="about" class ="row section-content">
         {% block about %}
         {% endblock about %}
       </div>
 
       <!-- Blog -->
-      <div id="blog" class="row section-header">
+      <div id="blog-header" class="row section-header">
         <h3>Blog <i class="icon-angle-down"></i></h3>
       </div>
-      <div id="blog-content" class="row section-content">
+      <div id="blog" class="row section-content">
           {% block blog %}
           {% endblock blog %}
       </div>
 
       <!-- Projects -->
-      <div id="projects" class="row section-header">
+      <div id="projects-header" class="row section-header">
         <h3>Projects <i class="icon-angle-down"></i></h3>
       </div>
-      <div id="projects-content" class="row section-content">
+      <div id="projects" class="row section-content">
         {% block projects %}
         {% endblock projects %}
       </div>
