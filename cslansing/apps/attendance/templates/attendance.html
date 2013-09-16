@@ -45,10 +45,10 @@
     <div class="panel-body">
       <p>Page {{ checkins.number }} of {{ checkins.paginator.num_pages }}</p>
       {% if checkins.has_previous %}
-      <button id="attendance-prev" class="btn btn-default" onclick="changePage('attendance', 'attendance-content', '{{ checkins.previous_page_number }}')">Prev</button>
+      <button id="attendance-prev" class="btn btn-default" onclick="changePage('attendance', 'attendance-content', {{ checkins.previous_page_number }})">Prev</button>
       {% endif %}
       {% if checkins.has_next %}
-      <button id="attendance-next" class="btn btn-default" onclick="changePage('attendance', 'attendance-content', '{{ checkins.next_page_number }}')">Next</button>
+      <button id="attendance-next" class="btn btn-default" onclick="changePage('attendance', 'attendance-content', {{ checkins.next_page_number }})">Next</button>
       {% endif %}
     </div>
   </div>
