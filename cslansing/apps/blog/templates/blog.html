@@ -8,10 +8,10 @@
     <div>
         <p>Blog {{ posts.number }} of {{ posts.paginator.num_pages }}</p>
         {% if posts.has_previous %}
-        <button id="blogs-prev" class="btn btn-default" onclick="changePage('blog', 'blog-content', {{ posts.previous_page_number }})">Prev</button>
+        <button id="blogs-prev" class="btn btn-default" onclick="changePage('blog', 'blog-content', '{{ posts.previous_page_number }}')">Prev</button>
         {% endif %}
         {% if posts.has_next %}
-        <button id="blogs-next" class="btn btn-default" onclick="changePage('blog', 'blog-content', {{ posts.next_page_number}})">Next</button>
+        <button id="blogs-next" class="btn btn-default" onclick="changePage('blog', 'blog-content', '{{ posts.next_page_number}}')">Next</button>
         {% endif %}
     </div>
 </div>
