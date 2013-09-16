@@ -44,10 +44,6 @@
             <i class="icon-facebook"></i> Facebook
           </a>
           |
-          <a href="https://twitter.com/cslansing" target="_blank">
-            <i class="icon-twitter"></i> Twitter
-          </a>
-          |
           <a href="https://plus.google.com/u/0/107904017027887656465/posts" target="_blank">
             <i class="icon-google-plus"></i> Google+
           </a>
@@ -59,6 +55,9 @@
           <a href="https://www.linkedin.com/profile/view?id=205579495" target="_blank">
             <i class="icon-linkedin"></i> LinkedIn
           </a>
+          <br />
+          <a href="{{ STATIC_URL }}Resume.pdf" target="_blank">
+            <i class="icon-file-text"></i> Resume</a>
         </p>
       </div><!-- .jumbotron -->
 
@@ -87,15 +86,6 @@
       <div id="projects-content" class="row section-content">
         {% block projects %}
         {% endblock projects %}
-      </div>
-
-      <!-- Resume -->
-      <div id="resume" class="row section-header">
-        <h3>Resume <i class="icon-angle-down"></i></h3>
-      </div>
-      <div id="resume-content" class ="row section-content">
-        {% block resume %}
-        {% endblock resume %}
       </div>
 
     </div><!-- .container -->
