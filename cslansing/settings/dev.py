@@ -40,6 +40,10 @@ STATICFILES_DIRS = (
     '/data/cslansing-com/cslansing/apps/pluggable/static/',
 )
 
+MIDDLEWARE_CLASSES += (
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
+)
+
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = '1jfd7r99k-y7xexa!rz*g0hem(ay*upb*g86yr%i3l-nl6r8m1'
 
@@ -48,3 +52,9 @@ TEMPLATE_DIRS = (
     '/data/cslansing-com/cslansing/apps/blog/templates',
     '/data/cslansing-com/cslansing/apps/pluggable/templates',
 )
+
+INSTALLED_APPS += (
+    'debug_toolbar',
+)
+
+INTERNAL_IPS = ('127.0.0.1',)
