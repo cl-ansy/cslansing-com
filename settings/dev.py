@@ -1,4 +1,4 @@
-from cslansing.settings.default import *
+from settings.default import *
 
 DEBUG = True
 
@@ -19,7 +19,7 @@ DATABASES = {
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = '/data/cslansing-com/cslansing/media/'
+MEDIA_ROOT = '/data/cslansing-com/media/'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -37,7 +37,7 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    '/data/cslansing-com/cslansing/apps/pluggable/static/',
+    '/data/cslansing-com/apps/landing/static/',
 )
 
 MIDDLEWARE_CLASSES += (
@@ -48,9 +48,10 @@ MIDDLEWARE_CLASSES += (
 SECRET_KEY = '1jfd7r99k-y7xexa!rz*g0hem(ay*upb*g86yr%i3l-nl6r8m1'
 
 TEMPLATE_DIRS = (
-    '/data/cslansing-com/cslansing/apps/attendance/templates',
-    '/data/cslansing-com/cslansing/apps/blog/templates',
-    '/data/cslansing-com/cslansing/apps/pluggable/templates',
+    '/data/cslansing-com/templates',
+    '/data/cslansing-com/apps/attendance/templates',
+    '/data/cslansing-com/apps/blog/templates',
+    '/data/cslansing-com/apps/landing/templates',
 )
 
 INSTALLED_APPS += (

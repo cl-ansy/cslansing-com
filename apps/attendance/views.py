@@ -1,7 +1,7 @@
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.decorators.csrf import csrf_exempt
 from datetime import datetime
-from cslansing.apps.attendance.models import CheckIn
+from apps.attendance.models import CheckIn
 
 @csrf_exempt
 def attendance(request):
