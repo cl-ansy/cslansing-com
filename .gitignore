@@ -1,8 +1,4 @@
 *.pyc
 *.pyo
 *.log
-media/uploads
-media/attachments
-media/sitemap*
-humans.txt
 prod.py

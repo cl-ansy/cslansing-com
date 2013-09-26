@@ -94,10 +94,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'urls'
+ROOT_URLCONF = 'cslansing.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'wsgi.wsgi.application'
+WSGI_APPLICATION = 'cslansing.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -114,9 +114,9 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'django.contrib.admindocs',
-    'apps.attendance',
-    'apps.blog',
-    'apps.landing',
+    'cslansing.apps.attendance',
+    'cslansing.apps.blog',
+    'cslansing.apps.pluggable',
 )
 
 # A sample logging configuration. The only tangible logging

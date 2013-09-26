@@ -1,6 +1,6 @@
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
-from apps.blog.models import Post
+from cslansing.apps.blog.models import Post
 
 def blog(request):
     post_list = Post.objects.order_by("-created")

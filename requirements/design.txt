@@ -1,0 +1,4 @@
+jQuery==1.10.2
+Bootstrap==3.0.0
+FontAwesome==3.2.1
+Fonts==Vollkorn,Ubuntu

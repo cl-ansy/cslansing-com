@@ -1,4 +1,4 @@
-from apps.attendance.models import CheckIn
+from cslansing.apps.attendance.models import CheckIn
 from django.contrib import admin
 
 class CheckInAdmin(admin.ModelAdmin):
