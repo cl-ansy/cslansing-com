@@ -1,12 +1,12 @@
   <div id="attendance">
-  <div id="attendance-content" class="panel panel-default">
-    <div class="panel-heading"><strong>Attendance App</strong></div>
-    <div class="panel-body">
+  <div id="attendance-content">
+    <div><strong>Attendance App</strong></div>
+    <div>
       <p>
         This project is for an android application that allows students to scan an NFC tag using an android device in order to verify their attendance for a class. Attendance info is sent from the NFC tag via POST, stored in the database, and then displayed on this page.
       </p>
     </div>
-    <table class="table">
+    <table>
       <thead>
         <tr>
           <th>Student ID</th>
@@ -18,21 +18,21 @@
       <tbody>
         {% for c in checkins %}
           {% if c.studentID|length != 9 %}
-            <tr class="danger">
+            <tr>
               <td>{{ c.studentID }}</td>
               <td>{{ c.classID }}</td>
               <td>{{ c.timestamp }}</td>
               <td>Incorrect Student ID</td>
             </tr>
           {% elif c.classID|length != 7 %}
-            <tr class="danger">
+            <tr>
               <td>{{ c.studentID }}</td>
               <td>{{ c.classID }}</td>
               <td>{{ c.timestamp }}</td>
               <td>Incorrect Class ID</td>
             </tr>
           {% else %}
-            <tr class="success">
+            <tr>
               <td>{{ c.studentID }}</td>
               <td>{{ c.classID }}</td>
               <td>{{ c.timestamp }}</td>
@@ -42,13 +42,13 @@
         {% endfor %}
       </tbody>
     </table>
-    <div class="panel-body">
+    <div>
       <p>Page {{ checkins.number }} of {{ checkins.paginator.num_pages }}</p>
       {% if checkins.has_previous %}
-      <button id="attendance-prev" class="btn btn-default" onclick="changePage('attendance', 'attendance-content', {{ checkins.previous_page_number }})">Prev</button>
+      <button id="attendance-prev" onclick="changePage('attendance', 'attendance-content', {{ checkins.previous_page_number }})">Prev</button>
       {% endif %}
       {% if checkins.has_next %}
-      <button id="attendance-next" class="btn btn-default" onclick="changePage('attendance', 'attendance-content', {{ checkins.next_page_number }})">Next</button>
+      <button id="attendance-next" onclick="changePage('attendance', 'attendance-content', {{ checkins.next_page_number }})">Next</button>
       {% endif %}
     </div>
   </div>

@@ -9,7 +9,6 @@
     <meta name="author" content="Chris Lansing">
 
     <!-- External Styles -->
-    <link href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}cslansing.css" rel="stylesheet">
 
@@ -23,19 +22,7 @@
 
   <body>
 
-  <!-- Side Nav Button -->
-    <div class="btn-group sidenav">
-      <button type="button" id="sidenav-button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-        <i class="icon-double-angle-down"></i>
-      </button>
-      <ul class="dropdown-menu pull-right" role="menu">
-        <li><a href="#about-header">About</a></li>
-        <li><a href="#blog-header">Blog</a></li>
-        <li><a href="#projects-header">Projects</a></li>
-      </ul>
-    </div>
-
-    <div class="container">
+    <div>
       <div class="jumbotron">
         <h1>Chris Lansing</h1>
         <p>
@@ -61,36 +48,35 @@
       </div><!-- .jumbotron -->
 
       <!-- About -->
-      <div id="about-header" class="row section-header">
+      <div id="about-header" class="section-header">
         <h3>About <i class="icon-angle-down"></i></h3>
       </div>
-      <div id="about" class ="row section-content">
+      <div id="about" class ="section-content">
         {% block about %}
         {% endblock about %}
       </div>
 
       <!-- Blog -->
-      <div id="blog-header" class="row section-header">
+      <div id="blog-header" class="section-header">
         <h3>Blog <i class="icon-angle-down"></i></h3>
       </div>
-      <div id="blog" class="row section-content">
+      <div id="blog" class="section-content">
           {% block blog %}
           {% endblock blog %}
       </div>
 
       <!-- Projects -->
-      <div id="projects-header" class="row section-header">
+      <div id="projects-header" class="section-header">
         <h3>Projects <i class="icon-angle-down"></i></h3>
       </div>
-      <div id="projects" class="row section-content">
+      <div id="projects" class="section-content">
         {% block projects %}
         {% endblock projects %}
       </div>
 
-    </div><!-- .container -->
+    </div>
      <!-- Javascript at the bottom for faster page loads -->
     <script src="{{ STATIC_URL }}jquery/jquery-1.10.2.min.js"></script>
-    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap.min.js"></script>
     <script src="{{ STATIC_URL }}cslansing.js"></script>
     {% block scripts %}{% endblock scripts %}
   </body>

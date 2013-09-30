@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 
 {% block about %}
-<div class="col-md-6">
+<div>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </div>
-<div class="col-md-6">
+<div>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </div>
 {% endblock about %}
@@ -15,9 +15,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 {% block projects %}
 {% include 'attendance.html' %}
-<div id="chem-project" class="panel panel-default">
-  <div class="panel-heading"><strong>Organic Chemistry Alkane Nomenclature Solver</strong></div>
-  <div class="panel-body">
+<div id="chem-project">
+  <div><strong>Organic Chemistry Alkane Nomenclature Solver</strong></div>
+  <div>
     <p>
       Created Python desktop application to allow users to draw alkane molecules by placing individual carbon atoms in a GUI. The IUPAC nomenclature for the molecule is then derived by recursively iterating over the molecule to obtain necessary structural information such as the location of the longest straight carbon chain and the frequency, position, and length of all substituent groups.
     </p>
