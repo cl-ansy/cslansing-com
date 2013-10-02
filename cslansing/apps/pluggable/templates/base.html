@@ -24,59 +24,59 @@
 
   <body>
 
-    <div>
-      <div class="jumbotron">
-        <h1>Chris Lansing</h1>
-        <p>
-          <a href="https://www.facebook.com/chris.lansing.98" target="_blank">
-            <i class="icon-facebook"></i> Facebook
-          </a>
-          |
-          <a href="https://plus.google.com/u/0/107904017027887656465/posts" target="_blank">
-            <i class="icon-google-plus"></i> Google+
-          </a>
-          |
-          <a href="https://github.com/cslansing" target="_blank">
-            <i class="icon-github"></i> Github
-          </a>
-          |
-          <a href="https://www.linkedin.com/profile/view?id=205579495" target="_blank">
-            <i class="icon-linkedin"></i> LinkedIn
-          </a>
-          <br />
-          <a href="{{ STATIC_URL }}doc/Resume.pdf" target="_blank">
-            <i class="icon-file-text"></i> Resume</a>
-        </p>
-      </div><!-- .jumbotron -->
+    <header role="header" class="grid-container">
+      <h1>Chris Lansing</h1>
+      <p>
+        <a href="https://www.facebook.com/chris.lansing.98" target="_blank">
+          <i class="icon-facebook"></i> Facebook
+        </a>
+        |
+        <a href="https://plus.google.com/u/0/107904017027887656465/posts" target="_blank">
+          <i class="icon-google-plus"></i> Google+
+        </a>
+        |
+        <a href="https://github.com/cslansing" target="_blank">
+          <i class="icon-github"></i> Github
+        </a>
+        |
+        <a href="https://www.linkedin.com/profile/view?id=205579495" target="_blank">
+          <i class="icon-linkedin"></i> LinkedIn
+        </a>
+        <br />
+        <a href="{{ STATIC_URL }}doc/Resume.pdf" target="_blank">
+          <i class="icon-file-text"></i> Resume</a>
+      </p>
+    </header>
 
+    <main role="main" class="grid-container">
       <!-- About -->
-      <div id="about-header" class="section-header">
+      <div id="about-header" class="grid-100 section-header">
         <h3>About <i class="icon-angle-down"></i></h3>
       </div>
-      <div id="about" class ="section-content">
+      <div id="about" class="grid-container section-content">
         {% block about %}
         {% endblock about %}
       </div>
 
       <!-- Blog -->
-      <div id="blog-header" class="section-header">
+      <div id="blog-header" class="grid-100 section-header">
         <h3>Blog <i class="icon-angle-down"></i></h3>
       </div>
-      <div id="blog" class="section-content">
+      <div id="blog" class="grid-container section-content">
           {% block blog %}
           {% endblock blog %}
       </div>
 
       <!-- Projects -->
-      <div id="projects-header" class="section-header">
+      <div id="projects-header" class="grid-100 section-header">
         <h3>Projects <i class="icon-angle-down"></i></h3>
       </div>
-      <div id="projects" class="section-content">
+      <div id="projects" class="grid-container section-content">
         {% block projects %}
         {% endblock projects %}
       </div>
+    </main>
 
-    </div>
      <!-- Javascript at the bottom for faster page loads -->
     <script src="{{ STATIC_URL }}js/jquery/jquery-1.10.2.min.js"></script>
     <script src="{{ STATIC_URL }}js/cslansing.js"></script>
