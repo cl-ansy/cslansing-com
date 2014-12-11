@@ -2,3 +2,5 @@
 *.pyo
 *.log
 prod.py
+bower_components
+node_modules

@@ -1,0 +1,23 @@
+{
+  "name": "cslansing-com",
+  "version": "1.0.0",
+  "homepage": "https://github.com/cslansing/cslansing-com",
+  "authors": [
+    "Chris Lansing <cslansin@gmail.com>"
+  ],
+  "description": "Personal website for Chris Lansing",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "fontawesome": "~4.2.0",
+    "jquery": "~2.1.1",
+    "react": "~0.12.1",
+    "requirejs": "~2.1.15"
+  }
+}
