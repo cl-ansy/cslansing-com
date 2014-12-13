@@ -1,0 +1,22 @@
+{
+  "name": "cslansing-com",
+  "version": "1.0.0",
+  "description": "Personal site for Chris Lansing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/cslansing/cslansing-com.git"
+  },
+  "keywords": [
+    "cslansing"
+  ],
+  "author": "Chris Lansing <cslansin@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jshint": "^2.5.10",
+    "jsxhint": "^0.8.1"
+  }
+}

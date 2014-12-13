@@ -4,4 +4,4 @@ $('.section-header').click(function() {
 });
 function changePage(targetId, contentId, pageNum){
     $('#' + targetId).load("/?page=" + pageNum + " #" + contentId);
-};
+}
