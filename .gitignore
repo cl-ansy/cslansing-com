@@ -4,4 +4,4 @@
 prod.py
 bower_components
 node_modules
-static/*
+static
