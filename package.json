@@ -16,7 +16,6 @@
   "author": "Chris Lansing <cslansin@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "jshint": "^2.5.10",
-    "jsxhint": "^0.8.1"
+    "jshint": "^2.5.10"
   }
 }

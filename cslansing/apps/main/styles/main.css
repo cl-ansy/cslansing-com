@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Vollkorn Regular'), local('Vollkorn-Regular'), url(http://themes.googleusercontent.com/static/fonts/vollkorn/v3/BCFBp4rt5gxxFrX6F12DKvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/_xyN3apAT_yRRDeqB3sPRg.woff) format('woff');
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Vollkorn', serif;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.sidenav {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+    box-shadow: 0;
+    -webkit-box-shadow: 0;
+}
+
+.section-header {
+    padding: 1em;
+    text-align: center;
+    background-color: transparent;
+    border-bottom: 1px solid #DDDDDD;
+    cursor: pointer;
+}
+
+.section-content {
+    display: none;
+    padding-top: 0.5em;
+}

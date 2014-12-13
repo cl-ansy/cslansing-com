@@ -60,6 +60,7 @@ STATICFILES_DIRS = (
     # os.path.join(PROJECT_ROOT, 'cslansing/apps/pluggable/static/'),
     os.path.join(PROJECT_ROOT, 'bower_components/'),
     os.path.join(PROJECT_ROOT, 'cslansing/apps/main/scripts/'),
+    os.path.join(PROJECT_ROOT, 'cslansing/apps/main/styles/'),
 )
 
 # List of finder classes that know how to find static files in
