@@ -2,10 +2,8 @@
 import os
 import sys
 
-sys.path.append('/var/www/cslansing-com/cslansing')
-
 if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "cslansing.settings.prod")
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "cslansing.settings.default")
 
     from django.core.management import execute_from_command_line
 

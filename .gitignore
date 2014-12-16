@@ -1,7 +1,9 @@
 *.pyc
 *.pyo
 *.log
+manage_local.py
 prod.py
 bower_components
 node_modules
 static
+media

@@ -1,1 +1,1 @@
--r reqs/base.txt
+-r reqs/dev.txt
