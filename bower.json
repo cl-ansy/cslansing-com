@@ -18,6 +18,7 @@
     "fontawesome": "~4.2.0",
     "jquery": "~2.1.1",
     "react": "~0.12.1",
-    "requirejs": "~2.1.15"
+    "requirejs": "~2.1.15",
+    "jsx-requirejs-plugin": "~0.5.1"
   }
 }

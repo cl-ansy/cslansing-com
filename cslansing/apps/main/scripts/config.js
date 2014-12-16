@@ -1,10 +1,13 @@
 require.config({
     paths: {
         jquery: 'jquery/dist/jquery',
-        react: 'react/react'
+        react: 'react/react',
+        text: 'requirejs-text/text',
+        JSXTransformer: 'jsx-requirejs-plugin/js/JSXTransformer',
+        jsx: 'jsx-requirejs-plugin/js/jsx'
     }
 });
 
-define(['main'], function (Main) {
+define(['jsx!main'], function (Main) {
     Main.render();
 });
