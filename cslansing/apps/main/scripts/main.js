@@ -1,9 +1,12 @@
-define(['react', 'jsx!components/Hello'], function (React, Hello) {
+define([
+    'react',
+    'jsx!index'
+    ], function (React, Index) {
     return {
         render: function () {
             React.render(
-                <Hello name="World" />,
-                document.getElementById('content')
+                <Index />,
+                document.body
             );
         }
     };
