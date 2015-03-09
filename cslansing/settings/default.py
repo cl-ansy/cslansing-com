@@ -59,8 +59,8 @@ STATICFILES_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
     # os.path.join(PROJECT_ROOT, 'cslansing/apps/pluggable/static/'),
     os.path.join(PROJECT_ROOT, 'bower_components/'),
-    os.path.join(PROJECT_ROOT, 'cslansing/apps/main/scripts/'),
-    os.path.join(PROJECT_ROOT, 'cslansing/apps/main/styles/'),
+    os.path.join(PROJECT_ROOT, 'cslansing/apps/main/js/'),
+    os.path.join(PROJECT_ROOT, 'cslansing/apps/main/css/'),
 )
 
 # List of finder classes that know how to find static files in
@@ -100,7 +100,7 @@ TEMPLATE_DIRS = (
     # os.path.join(PROJECT_ROOT, 'cslansing/apps/attendance/templates'),
     # os.path.join(PROJECT_ROOT, 'cslansing/apps/blog/templates'),
     # os.path.join(PROJECT_ROOT, 'cslansing/apps/pluggable/templates'),
-    os.path.join(PROJECT_ROOT, 'cslansing/apps/main/templates/'),
+    os.path.join(PROJECT_ROOT, 'cslansing/apps/main/html'),
 )
 
 INSTALLED_APPS = (
