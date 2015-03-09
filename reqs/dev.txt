@@ -1,4 +1,4 @@
 -r base.txt
 -r design.txt
 
-'django-debug-toolbar>=0.9.4'
+django-debug-toolbar>=0.9.4
