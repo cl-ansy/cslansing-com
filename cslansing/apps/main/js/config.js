@@ -8,6 +8,6 @@ require.config({
     }
 });
 
-define(['jsx!main'], function (Main) {
-    Main.render();
+define(['react', 'jsx!index'], function (React, Index) {
+    React.render(React.createElement(Index), document.body);
 });
