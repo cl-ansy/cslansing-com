@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Vollkorn Regular'), local('Vollkorn-Regular'), url(http://themes.googleusercontent.com/static/fonts/vollkorn/v3/BCFBp4rt5gxxFrX6F12DKvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/_xyN3apAT_yRRDeqB3sPRg.woff) format('woff');
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  font-family: 'Ubuntu', sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Vollkorn', serif;
+}
+
+.content {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+}
+
+/**********
+ * HEADER *
+ **********/
+header {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+  padding: 1em;
+}
+
+header h2 {
+  flex: 1 0 auto;
+}
+
+.social-links {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-link {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1em;
+  color: blue;
+}
+
+/*******
+ * NAV *
+ *******/
+nav {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+
+  width: 100%;
+  list-style: none;
+
+  background: rgb(112, 32, 45);
+}
+
+nav a {
+  display: block;
+
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1em;
+  color: white;
+}
+nav a:hover {
+  background: rgb(63, 15, 23);
+}
+/********
+ * MAIN *
+ ********/
+main {
+  padding: 1em;
+}
+
+/*********
+ * ASIDE *
+ *********/
+aside {
+  padding: 1em;
+  background: rgba(147, 128, 108, 0.1);
+}
+
+/**********
+ * FOOTER *
+ **********/
+footer {
+  padding: 1em;
+  flex: none;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .content {
+    flex-direction: row;
+  }
+  header {
+    flex-direction: row;
+    align-items: baseline;
+  }
+  main {
+    flex: 1;
+    margin: 0;
+  }
+  nav,
+  aside {
+    flex: 0 0 12em;
+  }
+}
+
+
+@media all and (max-width: 600px) {
+  nav {
+    flex-flow: column wrap;
+
+    padding: 0;
+  }
+
+  nav a {
+    text-align: center;
+    padding: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  nav li:last-of-type a {
+    border-bottom: none;
+  }
+}

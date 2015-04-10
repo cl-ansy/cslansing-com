@@ -6,7 +6,7 @@ define([
         render: function() {
             return (
                 <section>
-                    <h3>{this.props.header}</h3>
+                    <h3>{this.props.title}</h3>
                     <p>{this.props.content}</p>
                 </section>
             );
